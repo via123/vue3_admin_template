@@ -8,7 +8,7 @@
 -->
 <template>
   <div>
-    <svg :style="{width:width,height:height}">
+    <svg :style="{ width: width, height: height }">
       <!-- 属性值必须以#icon- 开头 -->
       <use :xlink:href="prefix + name" :fill="color"></use>
     </svg>
@@ -17,31 +17,30 @@
 <script setup lang="ts">
 // 接收父组件传入的参数
 defineProps({
-    //xlink:href属性值前缀 
-    prefix: {
-        type: String,
-        default: '#icon-'
-    },
-    // 使用的图标名字
-    name:{
-        type: String
-    },
-    // 图标颜色
-    color: {
-      type: String,
-      default: ''
-    },
-    // 图标宽度
-    width: {
-      type: String,
-      default: '16px'
-    },
-    // 图标宽度
-    height: {
-      type: String,
-      default: '16px'
-    }
+  //xlink:href属性值前缀
+  prefix: {
+    type: String,
+    default: '#icon-',
+  },
+  // 使用的图标名字
+  name: {
+    type: String,
+  },
+  // 图标颜色
+  color: {
+    type: String,
+    default: '',
+  },
+  // 图标宽度
+  width: {
+    type: String,
+    default: '16px',
+  },
+  // 图标宽度
+  height: {
+    type: String,
+    default: '16px',
+  },
 })
 </script>
-<style scoped>
-</style>
+<style scoped></style>

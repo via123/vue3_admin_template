@@ -16,18 +16,17 @@
 </template>
 <script setup lang="ts">
 import { reqLogin } from './api/user'
-import { onMounted } from 'vue';
+import { onMounted } from 'vue'
 console.log(import.meta.env)
 
-onMounted(()=> {
- reqLogin({username: 'admin',password:'111111'}).then(res => {
-  console.log(res)
- })
+onMounted(() => {
+  reqLogin({ username: 'admin', password: '111111' }).then((res) => {
+    console.log(res)
+  })
 })
 </script>
 <style scoped lang="scss">
-.color{
+.color {
   color: $color;
 }
-
 </style>

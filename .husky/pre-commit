@@ -1,3 +1,12 @@
+###
+ # @Author: qianyun.1108 lvqianyun
+ # @Date: 2023-09-25 15:19:04
+ # @LastEditors: qianyun.1108 lvqianyun
+ # @LastEditTime: 2023-10-06 15:55:13
+ # @FilePath: /lvqianyun/vue3_admin_template/project/.husky/pre-commit
+ # @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+### 
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
+PATH="/usr/local/bin:$PATH"
 npm run format
